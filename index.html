@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+   
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            
+
+            // Ajax request for getting JSON data
+            //Replace data.php with your JSON API's url
+            //var param=jQuery.param({ field1: "hello", field2 : "hello2"})
+           // var param={ field1: "hello", field2 : "hello2"};
+            $.getJSON("/getdata/id=12", function (data) {
+
+                console.log(data);
+               
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="chartContainer" style="width: 50%; height: 300px;"></div>
+</body>
+</html>
